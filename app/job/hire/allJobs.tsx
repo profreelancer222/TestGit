@@ -10,6 +10,7 @@ import previous from '../../../public/assest/icons/previous.svg'
 import Link from 'next/link'
 import next from '../../../public/assest/icons/next.svg'
 import Image from 'next/image'
+import Hire from '../hire/hire'
 import { useEffect, useState } from 'react';
 import { isEmpty } from 'is-empty';
 import { sign } from 'crypto';
