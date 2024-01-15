@@ -81,25 +81,6 @@ export default function Page() {
 
 
 		
-	const googleLoginMiddleware = async () => {
-		axios.defaults.headers.common['authorization'] = user;
-		   //console.log(user.access_token);
-		   await axios
-			 .get(
-			   `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user}`,
-			   {
-				 headers: {
-				   Authorization: `Bearer ${window.localStorage.getItem("token")}`,
-				   Accept: "application/json",
-				 },
-			   }
-			 )
-			 .then((res) => {
-			   console.log(res.data);
-		onError: (error) => console.log("Login Failed:", error)
-	});
-
-
 
 	useEffect(() => {
 		if (!isEmpty(cookies.jwtToken)) {
