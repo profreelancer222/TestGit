@@ -69,7 +69,7 @@ export default function Page() {
 	}
 
 	return (
-		<div className="w-full h-[100vh] bg-slate-200 justify-center items-center inline-flex"><ToastContainer />
+		<div className="w-full h-[300vh] bg-slate-200 justify-center items-center inline-flex"><ToastContainer />
 			<div className="w-[721px] h-[557px]">
 				<div className="w-[721px] h-[557px] self-center grow shrink basis-0 p-6 bg-white rounded-2xl shadow justify-center items-center gap-6 inline-flex">
 					<Image
@@ -85,7 +85,7 @@ export default function Page() {
 						</div>
 						<div className="flex-col justify-start items-center gap-1 flex">
 							<div className="text-sky-700 text-base font-semibold font-['Rubik']">{"Welcome to back"}</div>
-							<div className="text-zinc-400 text-[10px] font-normal font-['Rubik']">{"Sign in to continue"}</div>
+							<div className="text-zinc-400 text-[30px] font-normal font-['Rubik']">{"Sign in to continue"}</div>
 						</div>
 						<div className="self-stretch h-[136px] flex-col justify-start items-center gap-[18px] flex">
 							<div className="self-stretch h-[59px] flex-col justify-start items-start gap-2.5 flex">
