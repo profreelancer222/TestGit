@@ -75,24 +75,7 @@ export default function Page() {
 			setUser(codeResponse.access_token);
 		//	console.log(user.access_token)
 			googleLoginMiddleware()
-			console.log("codeResponse", codeResponse)
-			localStorage.setItem("token", codeResponse.access_token);
-		},
 
-
-		
-
-	useEffect(() => {
-		if (!isEmpty(cookies.jwtToken)) {
-			apiFactory.test(cookies.jwtToken)
-				.then(() => {
-					localStorage.setItem("token", cookies.jwtToken);
-					//router.push("/job/hire");
-				})
-				.catch(() => {
-					setCookie("jwtToken", null);
-					localStorage.removeItem("token");
-				});
 		}
 	}, [])
 	return (
