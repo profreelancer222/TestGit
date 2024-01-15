@@ -78,21 +78,7 @@ export default function Page() {
 
 		}
 	}, [])
-	return (
-		<div className="w-full h-[100vh] bg-slate-200 justify-center items-center inline-flex"><ToastContainer />
-			<div className="w-[721px] h-[557px]">
-				<div className="w-[721px] h-[557px] self-center grow shrink basis-0 p-6 bg-white rounded-2xl shadow justify-center items-center gap-6 inline-flex">
-					<Image
-						className="self-stretch rounded-lg"
-						width={246}
-						height={509}
-						src={coffeePicture}
-						alt="Sign image"
-					/>
-					<div className="grow shrink basis-0 self-stretch pt-6 flex-col justify-start items-center gap-6 inline-flex">
-						<div className="w-[258px] h-7 justify-center items-center inline-flex">
-							<Image className='w-[258px] h-7 relative' src={logo} alt='Logo image' />
-						</div>
+	
 						<div className="flex-col justify-start items-center gap-1 flex">
 							<div className="text-sky-700 text-base font-semibold font-['Rubik']">{"Welcome to back"}</div>
 							<div className="text-zinc-400 text-[10px] font-normal font-['Rubik']">{"Sign in to continue"}</div>
